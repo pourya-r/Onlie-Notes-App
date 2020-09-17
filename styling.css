@@ -1,0 +1,65 @@
+body{
+    background: url("img/image.jpg") no-repeat fixed center center;
+    background-size: cover;
+    font-family: 'Arvo' , sans-serif !important;
+}
+
+/*Jumbotron*/
+#jumbotron{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+
+
+.navbar-custom, footer {
+    background-color: #0088cc;
+    border-color: #0072ab;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fa7c59), to(#FC4D1C));
+    background-image: -moz-linear-gradient(top, #fa7c59 0%, #FC4D1C 100%);
+    background-image: linear-gradient(to bottom, #fa7c59 0%, #FC4D1C 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00aaff', endColorstr='#ff0088cc', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #e6e6e6;
+    background-color: transparent;
+}
+
+.navbar-custom li a {
+    margin-left: 10px;
+}
+.navbar-custom .active .nav-link,
+.navbar-custom .active li {
+    font-weight: bolder;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#B37A4D), to(#D29660));
+    background-image: -moz-linear-gradient(top, #B37A4D 0%, #D29660 100%);
+    background-image: linear-gradient(to bottom, #B37A4D 0%, #D29660 100%);
+    background-repeat: repeat-x;
+}
+#allnote, #done, #notePad {
+    display: none;
+}
+#notePad {
+   font-size: 1.5em;
+    border: #f66b43 solid 2px;
+    padding: 0;
+}
+.profileTable {
+    max-width: 800px;
+    cursor: pointer;
+}
+
+small{
+    line-height: 5px;
+}
+.actdiv {
+    border: #FC4D1C 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 200px;
+}

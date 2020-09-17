@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fb3886a1-9904-4b09-986a-5559eb20054f" name="Note app" url="http://ftp.juststarted.host20.uk">
+        <fileTransfer rootFolder="/domains/juststarted.host20.uk/public_html" host="ftp.juststarted.host20.uk" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
