@@ -87,7 +87,7 @@
       <workItem from="1599842747208" duration="10954000" />
       <workItem from="1599907641334" duration="1146000" />
       <workItem from="1599994773863" duration="44705000" />
-      <workItem from="1600170689235" duration="33655000" />
+      <workItem from="1600170689235" duration="34993000" />
     </task>
     <servers />
   </component>
@@ -195,6 +195,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="500" y="192" key="SettingsEditor/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599832576157" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600334367614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600334367614" />
     <state x="762" y="263" key="ftp.server.browser" timestamp="1599750927421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
