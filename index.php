@@ -182,7 +182,7 @@ include ("remember.php");
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Forgot Password?</h4>
-                    <button class="close" data-dismiss="#forgotPassModal">
+                    <button class="close" data-dismiss="modal" data-taret="#forgotPassModal">
                         <span>&times;</span>
                     </button>
                 </div>
@@ -195,14 +195,14 @@ include ("remember.php");
                     <div class="form-outline mb-4">
                         <input type="email" id="forgotPassEmail" name="forgotPassEmail"
                                class="form-control form-control-lg" maxlength="50"/>
-                        <small class="invalid-feedback"></small>
+                        <small class="invalid-feedback" id="forgotPassEmailError"></small>
                         <label class="form-label" for="forgotPassEmail">Email</label>
                     </div>
 
                 <!--submit button-->
-                <div class="container mb-4">
-                    <button type="submit" name="login"  class="btn btn-block btn-warning btn-lg">RESET PASSWORD</button>
-                </div>
+                    <div class="container mb-4">
+                        <button type="submit" name="submit"  class="btn btn-block btn-warning btn-lg">RESET PASSWORD</button>
+                    </div>
             </div>
         </div>
     </div>

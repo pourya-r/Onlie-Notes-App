@@ -4,6 +4,7 @@ include "connection.php";
 if (!isset($_SESSION['user_id']) && !empty($_COOKIE['rememberMe'])){
     //extract $authenticator1&2 from the cookie
     //to remind: COOKIE(f1):  $a . "," . bin2hex($b)  &  F2: hash('sha256', $a)
+
     list($authenticator1, $authenticator2) = explode(',' , $_COOKIE['rememberMe']);
     $authenticator2 = hex2bin($authenticator2);
     $f2authenticator2 = hash('sha256', $authenticator2);
@@ -16,7 +17,7 @@ if (!isset($_SESSION['user_id']) && !empty($_COOKIE['rememberMe'])){
         echo "there was an error to run an query";
     }else{
         $count = mysqli_num_rows($result);
-        if ($count!==1){
+        if ($count != 1){
             echo "remember me process failed";
             //if no error we extract user from remember me table
         }else{
@@ -53,6 +54,7 @@ if (!isset($_SESSION['user_id']) && !empty($_COOKIE['rememberMe'])){
                 //Log user in and redirect him into Main Notes page
                 $_SESSION['user_id'] = $row['user_id'];
                 header("location:mainpageloggedin.php");
+
             }
         }
     }

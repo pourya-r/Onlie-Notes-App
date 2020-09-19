@@ -4,6 +4,7 @@ $("#signupForm").on("submit", function (event){
     event.preventDefault();
     //collect user inputs
     let dataToPost = $(this).serializeArray();
+    console.log(dataToPost);
 
     //send them to signup.php using AJAX
     $.ajax({
@@ -46,7 +47,26 @@ $("#loginForm").on("submit", function (event){
     });
 });
 
+//ajax call for forgot password
+$("#forgotPassForm").on("submit", function (event){
+    event.preventDefault();
+    // Collect user input
+    let dataToPost = $(this).serializeArray();
 
+    // send input via jax to loggin.php
+    $.ajax({
+        url: "forgot-password.php",
+        type: "POST",
+        data: dataToPost,
+        success: data => {
+           forgotPassErrorHandler(data);
+        },
+        error: () => {
+            $("#forgotPassMessage").html("<div class='alert alert-danger' style='border: #FC4D1C 1px solid;border-radius: 15px'>" +
+                "There was an error with ajax call please try again later</div>");
+        }
+    });
+});
 
 
 
@@ -146,6 +166,40 @@ function logginErrorHandler(data){
             $('small').html("<p></p>");
             $('input[name="loginEmail"]').addClass("is-invalid");
             $('input[name="loginPass"]').addClass("is-invalid");
+        }
+
+    }
+}
+
+// Error handler for Resset password
+function forgotPassErrorHandler(data){
+    //Clear validation and errors
+    $('input').removeClass("is-invalid");
+    $("#forgotPassMessage").html("<div></div>");
+    let dataArray = {};
+
+    if (data){
+        //getting data array(object) from data to show error under inputs
+        dataArray = JSON.parse(data);
+
+        //if email error
+        if (dataArray["missingEmail"]){
+            $("#forgotPassEmailError").html(dataArray["missingEmail"]);
+            $('input[name="forgotPassEmail"]').addClass("is-invalid");
+        }else {$('input[name="forgotPassEmail"]').addClass("is-valid")}
+
+        //if invalid email
+        if (dataArray["invalidEmail"]){
+            $("#forgotPassEmailError").html(dataArray["invalidEmail"]);
+            $('input[name="forgotPassEmail"]').addClass("is-invalid");
+        }else{$('input[name="forgotPassEmail"]').addClass("is-valid");}
+
+
+        //Other errors
+        if (dataArray["message"]) {
+            $("#forgotPassMessage").html(dataArray["message"]);
+            $('input[name="forgotPassEmail"]').addClass("is-invalid");
+
         }
 
     }
