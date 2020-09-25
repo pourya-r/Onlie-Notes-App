@@ -1,5 +1,29 @@
+<?php
+session_start();
+if(!isset($_SESSION['user_id'])){
+    header("location: index.php");
+}
+include "connection.php";
+$user_id = $_SESSION['user_id'];
+//get username and email
+$sql = "SELECT * FROM users WHERE user_id='$user_id'";
+$result = mysqli_query($link, $sql);
+
+$count = mysqli_num_rows($result);
+if ($count === 1){
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+    $username = $row['username'];
+    $email = $row['email'];
+}else{
+    echo "there was an error retrieving info from database";
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,13 +33,13 @@
     <link rel="stylesheet" href="styling.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-    <title>Profile</title>
+    <script src="https://kit.fontawesome.com/4cbe464fbe.js" crossorigin="anonymous"></script>
+    <title>Online Note App</title>
 </head>
-<body>
 <!-- Navigation bar-->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom" role="navigation">
     <div class="container-fluid ">
-        <a href="/" class="navbar-brand">
+        <a href="" class="navbar-brand">
             Online Note App
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
@@ -40,10 +64,10 @@
             </ul>
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item mr-2">
-                    <a href="#" class="nav-link">logged in as <b>username</b></a>
+                    <a href="#" class="nav-link">logged in as <b><?php echo $username; ?></b></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Log Out</a>
+                    <a href="index.php?logout=1" class="nav-link">Log Out</a>
                 </li>
             </ul>
         </div>
@@ -56,11 +80,11 @@
     <table class="profileTable table table-responsive table-hover table-bordered table-sm text-left mx-auto">
         <tr data-target="#updateUsername" data-toggle="modal">
             <th>Username</th>
-            <td>Value</td>
+            <td><?php echo $username; ?></td>
         </tr>
         <tr data-target="#updateEmail" data-toggle="modal">
             <th>Email</th>
-            <td>value</td>
+            <td><?php echo $email ?></td>
         </tr>
         <tr data-target="#updatePassword" data-toggle="modal">
             <th>Password</th>
@@ -79,7 +103,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Update Email</h4>
-                    <button class="close" data-dismiss="#updateEmail">
+                    <button class="close" data-dismiss="modal" data-target="#updateEmail">
                         <span>&times;</span>
                     </button>
                 </div>
@@ -92,8 +116,8 @@
                     <div class="form-outline mb-4">
                         <input type="email" id="email" name="email"
                                class="form-control form-control-lg" maxlength="50" value=""/>
-                        <small class="invalid-feedback"></small>
-                        <label class="form-label" for="email" id="emailLabel">Email</label>
+                        <small class="invalid-feedback" id="updateEmailErrorMSG"></small>
+                        <label class="form-label" for="email" id="emailLabel"><?php echo $email ?></label>
                     </div>
 
 
@@ -101,7 +125,7 @@
                 <!--Footer of login form-->
                 <!--submit button-->
                 <div class="container mb-4">
-                    <button type="submit" name="login"  value="submit" class="btn btn-block btn-warning btn-lg">Submit</button>
+                    <button type="submit" name="submit"  value="submit" class="btn btn-block btn-warning btn-lg">Submit</button>
                 </div>
             </div>
         </div>
@@ -116,7 +140,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Update Username</h4>
-                    <button class="close" data-dismiss="#updateUsername">
+                    <button class="close" data-dismiss="modal" data-target="#updateUsername">
                         <span>&times;</span>
                     </button>
                 </div>
@@ -129,8 +153,7 @@
                     <div class="form-outline mb-4">
                         <input type="text" id="username" name="username"
                                class="form-control form-control-lg" maxlength="30" value=""/>
-                        <small class="invalid-feedback"></small>
-                        <label class="form-label" for="loginEmail" id="usernameLabel">Username</label>
+                        <label class="form-label" for="username" id="usernameLabel">Current Username: <?php echo $username; ?></label>
                     </div>
 
 
@@ -138,12 +161,13 @@
                 <!--Footer of login form-->
                 <!--submit button-->
                 <div class="container mb-4">
-                    <button type="submit" name="login"  value="submit" class="btn btn-block btn-warning btn-lg">Sumbit</button>
+                    <button type="submit" name="submit"  value="submit" class="btn btn-block btn-warning btn-lg">Submit</button>
                 </div>
             </div>
         </div>
     </div>
 </form>
+
 
 
 <!--update Password-->
@@ -153,20 +177,20 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Update Password</h4>
-                    <button class="close" data-dismiss="#updatePassword">
+                    <button class="close" data-dismiss="modal" data-target="#updatePassword">
                         <span>&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <!-- Login message-->
-                    <div id="updateEmailMessage"></div>
+                    <div id="updatePassMessage"></div>
 
                     <!-- Form body-->
 
                     <div class="form-outline mb-4">
                         <input type="password" id="password" name="password"
                                class="form-control form-control-lg" maxlength="30" value=""/>
-                        <small class="invalid-feedback"></small>
+                        <small class="invalid-feedback" id="passwordError"></small>
                         <label class="form-label" for="password" id="passLabel">Current Password</label>
                     </div>
                     <hr>
@@ -174,13 +198,13 @@
                     <div class="form-outline mb-4">
                         <input type="password" id="newPassword" name="newPassword"
                                class="form-control form-control-lg" maxlength="30" value=""/>
-                        <small class="invalid-feedback"></small>
+                        <small class="invalid-feedback" id="newPasswordError"></small>
                         <label class="form-label" for="newPassword" id="newPasswordLabel">New Password</label>
                     </div>
                     <div class="form-outline mb-4">
                         <input type="password" id="repeatPassword" name="repeatPassword"
                                class="form-control form-control-lg" maxlength="30" value=""/>
-                        <small class="invalid-feedback"></small>
+                        <small class="invalid-feedback" id="repeatPasswordError"></small>
                         <label class="form-label" for="repeatPassword" id="repeatPasswordLabel">Repeat Password</label>
                     </div>
 
@@ -209,9 +233,11 @@
 </footer>
 
 <!-- JavaScript and dependencies -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.js" ></script>
+<script src="profile.js"></script>
 
 </body>
 </html>

@@ -60,6 +60,11 @@ small{
 .actdiv {
     border: #FC4D1C 2px solid;
     border-radius: 15px;
-    padding: 10px;
-    margin: 200px;
+    height: 200px;
 }
+.actdiv .deleteBTN, .actdiv .remindBTN {
+    margin: 0 10px 0 0;
+    height: 200px;
+
+}
+

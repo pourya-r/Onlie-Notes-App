@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c225191-3da9-4fb8-af0e-899f0cefe419" name="Default Changelist" comment="">
+    <list default="true" id="5c225191-3da9-4fb8-af0e-899f0cefe419" name="Default Changelist" comment="Complete reset password">
+      <change afterPath="$PROJECT_DIR$/activatenewemail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createNotes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleteNotes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loadNotes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myNotes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/updateEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/updateNotes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/updatePassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/updateUsername.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forgot-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgot-password.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activate.php" beforeDir="false" afterPath="$PROJECT_DIR$/activate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remember.php" beforeDir="false" afterPath="$PROJECT_DIR$/remember.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainpageloggedin.php" beforeDir="false" afterPath="$PROJECT_DIR$/mainpageloggedin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resetpassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/resetpassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storeresetpassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/storeresetpassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styling.css" beforeDir="false" afterPath="$PROJECT_DIR$/styling.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +72,9 @@
     <option name="proportion" value="0.7130621" />
   </component>
   <component name="ProjectId" id="1hKAIFU8epXGLkiXAqHZUdtBeT1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,8 +102,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\p_raj\Desktop\Practice programming\Note App\img" />
       <recent name="C:\Users\p_raj\Desktop\Practice programming\Note App" />
+      <recent name="C:\Users\p_raj\Desktop\Practice programming\Note App\img" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.resetpassword.php">
@@ -108,12 +139,35 @@
       <workItem from="1599994773863" duration="44705000" />
       <workItem from="1600170689235" duration="42750000" />
       <workItem from="1600342956072" duration="21594000" />
-      <workItem from="1600443690404" duration="6545000" />
+      <workItem from="1600443690404" duration="91265000" />
     </task>
+    <task id="LOCAL-00001" summary="Complete reset password">
+      <created>1600502321552</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600502321552</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Complete reset password" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete reset password" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1599757743801">
@@ -156,22 +210,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600159178830" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1600365350602">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1600526676126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600365350602" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1600365350601">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600526676126" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1600526676126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600365350601" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1600365350601">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600526676126" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1600526676126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600365350601" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1600365350602">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600526676126" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1600526676126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600365350602" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600526676126" />
     <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1600365350602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -208,14 +262,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600173682045" />
-    <state x="833" y="470" key="NewPhpFileDialog" timestamp="1600200339698">
+    <state x="833" y="470" key="NewPhpFileDialog" timestamp="1601022142605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="833" y="470" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600200339698" />
+    <state x="833" y="470" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1601022142605" />
+    <state x="728" y="240" key="RollbackChangesDialog" timestamp="1600502282235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="240" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600502282235" />
     <state x="500" y="192" key="SettingsEditor" timestamp="1599832576157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="500" y="192" key="SettingsEditor/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599832576157" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600502332370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600502332370" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600365201096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -224,6 +286,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="762" y="263" key="ftp.server.browser/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599750927421" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1600969782072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600969782072" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600362003697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,7 +299,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/index.js</url>
+          <url>file://$PROJECT_DIR$/home.js</url>
           <line>145</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
