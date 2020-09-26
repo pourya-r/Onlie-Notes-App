@@ -180,6 +180,8 @@ $(function (){
             })
         }
 
+        //Click on remind
+
 
     function showHide(array1, array2){
         array1.forEach(element => $(element).show());

@@ -19,26 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c225191-3da9-4fb8-af0e-899f0cefe419" name="Default Changelist" comment="Complete reset password">
-      <change afterPath="$PROJECT_DIR$/activatenewemail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/createNotes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deleteNotes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loadNotes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myNotes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updateEmail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updateNotes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updatePassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updateUsername.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="5c225191-3da9-4fb8-af0e-899f0cefe419" name="Default Changelist" comment="Complete mainpage when user logged in, Complete note handling, complete profile page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activate.php" beforeDir="false" afterPath="$PROJECT_DIR$/activate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadNotes.php" beforeDir="false" afterPath="$PROJECT_DIR$/loadNotes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainpageloggedin.php" beforeDir="false" afterPath="$PROJECT_DIR$/mainpageloggedin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resetpassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/resetpassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styling.css" beforeDir="false" afterPath="$PROJECT_DIR$/styling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myNotes.js" beforeDir="false" afterPath="$PROJECT_DIR$/myNotes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +125,8 @@
       <workItem from="1599994773863" duration="44705000" />
       <workItem from="1600170689235" duration="42750000" />
       <workItem from="1600342956072" duration="21594000" />
-      <workItem from="1600443690404" duration="91265000" />
+      <workItem from="1600443690404" duration="97536000" />
+      <workItem from="1601106204728" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="Complete reset password">
       <created>1600502321552</created>
@@ -148,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600502321552</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Complete mainpage when user logged in, Complete note handling, complete profile page">
+      <created>1601044229166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601044229166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,10 +158,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete reset password" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete reset password" />
+    <MESSAGE value="Complete mainpage when user logged in, Complete note handling, complete profile page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete mainpage when user logged in, Complete note handling, complete profile page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1599757743801">
@@ -274,10 +270,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="500" y="192" key="SettingsEditor/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1599832576157" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600502332370">
+    <state x="548" y="232" key="Vcs.Push.Dialog.v2" timestamp="1601044254743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1600502332370" />
+    <state x="548" y="232" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1601044254743" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600365201096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

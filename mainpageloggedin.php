@@ -86,7 +86,7 @@ if(!isset($_SESSION['user_id'])){
                     class="btn btn-lg btn-warning float-left text-capitalize">Add Note</button>
 
             <button type="button" name="allnote" value="allNote" id="allnote"
-                    class="btn btn-lg btn-outline-warning float-left  text-capitalize">All Note</button>
+                    class="btn btn-lg btn-warning float-left  text-capitalize">All Note</button>
 
             <button type="button" name="edit" value="Edit" id="edit"
                     class="btn btn-lg btn-warning float-right text-capitalize">Edit</button>

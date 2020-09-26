@@ -32,7 +32,6 @@ if($result = mysqli_query($link, $sql)){
     <div class='text-nowrap font-weight-bold noteText text-decoration-none overflow-hidden' style='text-overflow:ellipsis!important;max-height: 30px'>$note</div>
     <div class='text-muted pl-2' style='font-size: small'>$time</div>
 </div>
-<button class='btn btn-success col-xs-3 far fa-clock ml-auto remindBTN' name='remindBTN' style='font-size: 20px;display:none;min-width: 40px;padding: 10px'></button>
 </div>
 ";
         }
